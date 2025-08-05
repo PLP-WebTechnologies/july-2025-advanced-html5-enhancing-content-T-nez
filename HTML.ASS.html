@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enhanced HTML5 Page with Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #999;
+      padding: 8px;
+      text-align: left;
+    }
+    fieldset {
+      margin-top: 20px;
+      padding: 20px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>HTML5 Skills Showcase</h1>
+    <p>This page demonstrates use of lists, tables, media, and an accessible form using HTML5.</p>
+  </header>
+
+  <!-- Lists Section -->
+  <section>
+    <h2>Features of HTML5</h2>
+    <ul>
+      <li>Semantic Elements</li>
+      <li>Multimedia Support</li>
+      <li>Improved Forms</li>
+      <li>Enhanced Accessibility</li>
+    </ul>
+
+    <h3>Steps to Build a Form</h3>
+    <ol>
+      <li>Define the form structure</li>
+      <li>Choose input types</li>
+      <li>Label your fields</li>
+      <li>Apply validation</li>
+    </ol>
+  </section>
+
+  <!-- Table Section -->
+  <section>
+    <h2>HTML5 Input Types Comparison</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Input Type</th>
+          <th>Description</th>
+          <th>Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>email</td>
+          <td>Validates email format</td>
+          <td><input type="email" placeholder="example@example.com"></td>
+        </tr>
+        <tr>
+          <td>date</td>
+          <td>Shows date picker</td>
+          <td><input type="date"></td>
+        </tr>
+        <tr>
+          <td>number</td>
+          <td>Only allows numeric input</td>
+          <td><input type="number" min="1" max="100"></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Media Section -->
+  <section>
+    <h2>HTML5 Media Elements</h2>
+
+    <h3>Image</h3>
+    <img src="https://via.placeholder.com/400x200" alt="Sample image" width="400">
+
+    <h3>Audio</h3>
+    <audio controls>
+      <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <h3>Video</h3>
+    <video width="400" controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Form Section -->
+  <section>
+    <h2>User Registration Form</h2>
+    <form action="#" method="post" autocomplete="on">
+
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="John Doe">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">--Select--</option>
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+          <option value="other">Other</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Setup</legend>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required minlength="4" maxlength="15" placeholder="johndoe123">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6" placeholder="********">
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required placeholder="********">
+
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us something about yourself..."></textarea>
+
+        <label>
+          <input type="checkbox" name="terms" required>
+          I agree to the Terms and Conditions
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color">
+
+        <label for="website">Your Website (readonly):</label>
+        <input type="url" id="website" name="website" value="https://example.com" readonly>
+      </fieldset>
+
+      <button type="submit">Register</button>
+
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
